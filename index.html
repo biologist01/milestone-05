@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic CV Builder</title>
+    <link rel="shortcut icon" href="pngwing.com.png" type="image/x-icon">
+    <link rel="stylesheet" href="BUILD-CSS/style.css">
+    <link rel="stylesheet" href="BUILD-CSS/resp.css">
+    <link rel="stylesheet" href="GENERATED-CSS/generated.css">
+    <link rel="stylesheet" href="GENERATED-CSS/resp.css">
+    <link rel="stylesheet" href="GENERATED-CSS/resp.css">
+</head>
+
+<body>
+
+    <form class="container">
+        <h1 class="main-heading">DYNAMIC CV MAKER</h1>
+
+        <div class="personal-info">
+            <section class="info-section section-1">
+                <label>Upload your Photo</label>
+                <input type="file" accept="image/jpeg , image/jpg , image/png" class="image" required>
+            </section>
+
+            <section class="info-section section-2">
+                <label>Enter your name</label>
+                <input type="text" class="name" required minlength="3" maxlength="15" placeholder='Ex:- Ammar Shaikh'>
+            </section>
+            <section class="info-section section-3">
+                <label>Enter your Contact Info</label>
+                <input type="text" placeholder="+123456789" pattern="^\+[0-9]*$" class="contact" required minlength="13"
+                    maxlength="13">
+            </section>
+            <section class="info-section section-4">
+                <label>Enter your Email</label>
+                <input type="email" class="email" required placeholder="abc@xyz.com">
+            </section>
+            <section class="info-section section-5">
+                <label>Enter your Address</label>
+                <input type="text" class="address" required minlength="15"
+                    placeholder="Robert Robertson, 1234 NW Bobcat Lane, St. Robert, MO 65584-5678">
+            </section>
+            <section class="info-section section-6">
+                <label>Enter your Education</label>
+                <input title="Enter your education seperatedby commas" type="text" class="education" required
+                    minlength="5" placeholder="Ex:- 10th, 12th, Graduation">
+            </section>
+            <section class="info-section section-7">
+                <label>Enter your Skills</label>
+                <input type="text" class="skills-add" required minlength="15" placeholder="Ex:- HTML, CSS, JS">
+            </section>
+            <section class="info-section section-8">
+                <label>Enter your Experience</label>
+                <textarea type="text" class="experience-placeholder" required minlength="15"
+                    placeholder="Your Experience"></textarea>
+            </section>
+        </div>
+        <button class="submission-btn">Submit</button>
+
+    </form>
+    <!--! ----------------------------- second part ----------------------------- -->
+    <div class="generated_content">
+
+        <section class="section1">
+
+            <img src="../static_resume/images/pngwing.com.png" class="place-image" draggable="false" width="80%" alt="">
+
+            <div class="details">
+                <h1>Details</h1>
+                <hr>
+                <br>
+                <h2 class="bold">Name :-</h2>
+                <h2 class="gName editable-h2" contenteditable="true">Ammar Shaikh</h2>
+                <br>
+                <h2 class="bold">Contact :-</h2>
+                <h2 class="gContact number" contenteditable="true">+923161395814</h2>
+                <br>
+                <h2 class="bold">Email :-</h2>
+                <h2 class="gEmail" contenteditable="true">shaikhurwa61@gmail.com</h2>
+                <br>
+                <h2 class="bold">Address :-</h2>
+                <h2 class="gAddress" contenteditable="true">Latifabad Hyderabad</h2>
+            </div>
+        </section>
+        <section class="section2">
+            <!-- <h1 class="name"> STATIC RESUME</h1> -->
+
+            <div class="info education">
+                <h1 class="heading">Education</h1>
+                <ul class="styled-ul">
+                </ul>
+                <div contenteditable="true" class="education-container con1 disappear"></div>
+            </div>
+
+            <div class="info skills">
+                <h1 class="heading">Skills</h1>
+                <ul class="styled-ul ">
+
+                </ul>
+                <div class="skill-container con1 disappear" contenteditable="true"></div>
+            </div>
+
+            <div class="info experience">
+                <h1 class="heading">Experience</h1>
+                <p id="pl" contenteditable="true">My experience</p>
+            </div>
+
+            <button class="btn">Toggle Skills Section</button>
+
+        </section>
+    </div>
+
+    <script src="BUILD-SCRIPTS/index.js"></script>
+    <script src="GENERATED-SCRIPTS/script.js"></script>
+    <script src="EDITABLE-SCRIPT/index.js"></script>
+    <script>
+
+    </script>
+
+</body>
+
+</html>

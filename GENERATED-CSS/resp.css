@@ -1,0 +1,35 @@
+@media screen and (max-width: 775px) {
+    section.section1{
+        font-size: 60%;
+    }
+    .bold{
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width: 580px) {
+    section.section1{
+        font-size: 50%;
+    }
+
+}
+@media screen and (max-width: 495px) {
+    section.section1{
+        font-size: 40%;
+    }
+    .experience p {
+        font-size: small;
+    }
+
+}
+@media screen and (max-width: 398px) {
+    section.section1{
+        font-size: 35%;
+    }
+
+}
+
+@media print {
+    .btn{
+        visibility: hidden;
+    }
+}

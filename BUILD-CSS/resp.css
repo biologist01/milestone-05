@@ -1,0 +1,24 @@
+@media screen and (max-width: 700px) {
+    .personal-info{
+        flex-direction: column;
+        align-items: center;
+    }
+    form.container{
+        height: 120vh;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .personal-info{
+        align-items: baseline;
+        margin-left: 30px;
+    }
+    form.container{
+        height: 130vh;
+    }
+}
+@media print {
+    .main-heading{
+        color:red;
+    }
+}

@@ -1,0 +1,73 @@
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(35, 35, 35);
+    display: grid;
+    place-items: center;
+}
+
+.container{
+    width: 90vw;
+    min-height: 100vh;
+    background-color: #fff;
+    position: relative;
+    padding: 0 20px;
+    /* display: flex; */
+}
+.main-heading{
+    text-align: center;
+    color: rgb(255, 42, 78);
+}
+.personal-info{
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+    /* position: relative; */
+}
+.info-section{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-top: 5%;
+}
+.info-section input,
+.info-section textarea
+{
+    width: 250px;
+    padding: 7px 3px;
+    border-radius: 5px;
+}
+.info-section input:user-valid,
+.info-section textarea:user-valid
+{
+    border:2px solid rgb(0, 205, 0);
+}
+.info-section input:user-invalid,
+.info-section textarea:user-invalid
+{
+    border:2px solid rgb(184, 1, 1);
+}
+.experience-placeholder{
+    margin-bottom: 20px;
+}
+.submission-btn{
+    position: absolute;
+    bottom: 3%;
+    left: 48%;
+    transform: translate(-50%);
+    background-color: rgb(255, 42, 78);
+    border: 0;
+    padding: 10px 15px;
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+}
